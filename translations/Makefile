@@ -1,4 +1,4 @@
-QMAKE_TARGET  = ActiveFrameExample
+QMAKE_TARGET  = ActiveFrameSample2
 LUPDATE       = $(QNX_HOST)/usr/bin/lupdate
 LRELEASE      = $(QNX_HOST)/usr/bin/lrelease
 

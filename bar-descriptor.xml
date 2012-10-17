@@ -26,11 +26,11 @@
 
     <!-- A universally unique application identifier. Must be unique across all BlackBerry Tablet OS applications.
          Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-    <id>com.example.ActiveFrameExample</id>
+    <id>com.example.ActiveFrameSample2</id>
 
     <!-- The name that is displayed in the BlackBerry Tablet OS application installer. 
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
-    <name>ActiveFrameExample</name>
+    <name>ActiveFrameSample2</name>
     
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
          Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
@@ -46,7 +46,7 @@
 
     <!-- Description, displayed in the BlackBerry Tablet OS application installer.
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
-    <description>The ActiveFrameExample application</description>
+    <description>The ActiveFrameSample2 application</description>
 
     <!-- Copyright information. Optional. -->
     <!-- <copyright></copyright> -->
@@ -64,21 +64,21 @@
     
     <!--  The category where the application appears. Either core.games or core.media. -->
     <category>core.games</category>
-    <configuration id="com.qnx.qcc.toolChain.2121303189" name="Default">
+    <configuration id="com.qnx.qcc.toolChain.596653031" name="Default">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="arm/o.le-v7-g/ActiveFrameExample" entry="true" type="Qnx/Elf">ActiveFrameExample</asset>
+       <asset path="arm/o.le-v7-g/ActiveFrameSample2" entry="true" type="Qnx/Elf">ActiveFrameSample2</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.toolChain.1947551335" name="Device-Debug">
+    <configuration id="com.qnx.qcc.toolChain.471724613" name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="arm/o.le-v7-g/ActiveFrameExample" entry="true" type="Qnx/Elf">ActiveFrameExample</asset>
+       <asset path="arm/o.le-v7-g/ActiveFrameSample2" entry="true" type="Qnx/Elf">ActiveFrameSample2</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.toolChain.1491977528" name="Device-Release">
+    <configuration id="com.qnx.qcc.toolChain.148332075" name="Device-Release">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="arm/o.le-v7/ActiveFrameExample" entry="true" type="Qnx/Elf">ActiveFrameExample</asset>
+       <asset path="arm/o.le-v7/ActiveFrameSample2" entry="true" type="Qnx/Elf">ActiveFrameSample2</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.toolChain.1072780145" name="Simulator-Debug">
+    <configuration id="com.qnx.qcc.toolChain.537330663" name="Simulator-Debug">
        <platformArchitecture>x86</platformArchitecture>
-       <asset path="x86/o-g/ActiveFrameExample" entry="true" type="Qnx/Elf">ActiveFrameExample</asset>
+       <asset path="x86/o-g/ActiveFrameSample2" entry="true" type="Qnx/Elf">ActiveFrameSample2</asset>
     </configuration>
     
     <!--  The icon for the application, which should be 86x86. -->

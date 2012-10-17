@@ -1,4 +1,4 @@
-QMAKE_TARGET  = ActiveFrameExample
+QMAKE_TARGET  = ActiveFrameSample2
 QMAKE         = $(QNX_HOST)/usr/bin/qmake
 TARGET        = $(QMAKE_TARGET)
 
@@ -6,11 +6,11 @@ TARGET        = $(QMAKE_TARGET)
 all: Makefile $(QMAKE_TARGET)
 
 clean:
-	$(MAKE) -C ./arm -f Makefile distclean
-	$(MAKE) -C ./x86 -f Makefile distclean
+	$(MAKE) -C ./arm -f Makefile sureclean
+	$(MAKE) -C ./x86 -f Makefile sureclean	
 
 
-Makefile: FORCE
+Makefile: FORCE	
 	$(QMAKE) -spec unsupported/blackberry-armv7le-qcc -o arm/Makefile $(QMAKE_TARGET).pro CONFIG+=device
 	$(QMAKE) -spec unsupported/blackberry-x86-qcc -o x86/Makefile $(QMAKE_TARGET).pro CONFIG+=simulator
 	$(MAKE) -C ./translations -f Makefile update release
@@ -24,7 +24,7 @@ device:
 
 Device-Debug: Makefile
 	$(MAKE) -C ./arm -f Makefile debug
-
+	
 Device-Release: Makefile
 	$(MAKE) -C ./arm -f Makefile release
 
